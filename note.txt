@@ -1,0 +1,27 @@
+insert into item(name, description, in_stock_quantity, created_at) values('Shoe', 'Black ponty shoe', 100, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Dress', 'Beautiful Gown', 1020, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Pant', 'Skinny pant', 500, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Shirt', 'Blue summer wear', 300, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Sandals', 'Fitted sandals', 400, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Eye Glasses', 'Beautiful glasses', 600, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('UnderPant', 'Cotton wear', 800, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Blazer', 'Fitted Blazer', 100, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Slipers', 'Flat slipers', 900, '2024-07-12');
+insert into item(name, description, in_stock_quantity, created_at) values('Skirt', 'Sequin Skirt', 200, '2024-07-12');
+
+
+insert into employee(name, position, hired_at, hourly_wage) values('Jason', 'Sales', '2024-07-12', 30000);
+insert into employee(name, position, hired_at, hourly_wage) values('Amin', 'Maneger', '2024-07-12', 60000);
+insert into employee(name, position, hired_at, hourly_wage) values('Nunti', 'Customer Service', '2024-07-12', 40000);
+insert into employee(name, position, hired_at, hourly_wage) values('Brandon', 'Organiser', '2024-07-12', 35000);
+insert into employee(name, position, hired_at, hourly_wage) values('Bright', 'Sales', '2024-07-12', 30000);
+
+
+call get_all_items(); 
+call insert_new_item('Watch', 'Gold watch', 250); 
+call get_all_employees(2); 
+call insert_new_employee('Sunny', 'Cordinator', 38000); 
+call update_items(3, 300);
+call delete_item(11);
+call update_employee(8, 45000);
+call delete_employee(8);
